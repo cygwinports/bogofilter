@@ -1,0 +1,13 @@
+We need to use gettext's macros, particularly link-lib.m4.
+
+--- origsrc/bogofilter-1.2.0/Makefile.am	2009-01-11 22:10:09.000000000 -0600
++++ src/bogofilter-1.2.0/Makefile.am	2009-06-17 11:53:33.194381500 -0500
+@@ -1,7 +1,7 @@
+ # $Id: Makefile.am 6752 2008-10-16 22:10:32Z m-a $ 
+ 
+ # search path for m4 macros
+-ACLOCAL_AMFLAGS = -I m4
++#ACLOCAL_AMFLAGS = -I m4
+ 
+ SUBDIRS = trio src . doc
+ SYSCONFDIR = @sysconfdir@

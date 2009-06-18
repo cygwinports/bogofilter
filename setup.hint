@@ -1,0 +1,7 @@
+category: Mail
+requires: cygwin gsl libdb4.6 libgcc1 libiconv2
+sdesc: "Email spam filter"
+ldesc: "Bogofilter is a mail filter that classifies mail as spam or 
+non-spam by a statistical analysis of the message's header and content 
+(body). The program is able to learn from the user's classifications and 
+corrections."

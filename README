@@ -1,0 +1,82 @@
+bogofilter
+------------------------------------------
+Bogofilter is a mail filter that classifies mail as spam or non-spam by 
+a statistical analysis of the message's header and content (body). The 
+program is able to learn from the user's classifications and 
+corrections.
+
+Runtime requirements:
+  cygwin-1.7.0-49
+  gsl-1.12-1
+  libdb4.6-4.6.21.4-10
+  libgcc1-4.3.2-2
+  libiconv2-1.13-10
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-11
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://bogofilter.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/bogofilter/
+
+-------------------------------------------
+
+Build instructions:
+  unpack bogofilter-1.2.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./bogofilter-1.2.0-X.cygport all
+
+This will create:
+  /usr/src/bogofilter-1.2.0-X-src.tar.bz2
+  /usr/src/bogofilter-1.2.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/bogofilter.cf.example
+  /usr/bin/bf_compact
+  /usr/bin/bf_copy
+  /usr/bin/bf_tar
+  /usr/bin/bogofilter.exe
+  /usr/bin/bogolexer.exe
+  /usr/bin/bogotune.exe
+  /usr/bin/bogoupgrade
+  /usr/bin/bogoutil.exe
+  /usr/share/doc/bogofilter/AUTHORS
+  /usr/share/doc/bogofilter/COPYING
+  /usr/share/doc/bogofilter/NEWS
+  /usr/share/doc/bogofilter/README
+  /usr/share/doc/bogofilter/TODO
+  /usr/share/man/man1/bf_compact.1.gz
+  /usr/share/man/man1/bf_copy.1.gz
+  /usr/share/man/man1/bf_tar.1.gz
+  /usr/share/man/man1/bogofilter.1.gz
+  /usr/share/man/man1/bogolexer.1.gz
+  /usr/share/man/man1/bogotune.1.gz
+  /usr/share/man/man1/bogoupgrade.1.gz
+  /usr/share/man/man1/bogoutil.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 1.2.0-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
