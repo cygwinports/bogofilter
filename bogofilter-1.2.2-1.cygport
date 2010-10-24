@@ -1,7 +1,6 @@
 DESCRIPTION="Email spam filter"
 HOMEPAGE="http://bogofilter.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2
-         /usr/share/gettext/config.rpath"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
 PATCH_URI="1.2.0-aclocal.patch"
 
 DIFF_EXCLUDES="config.in"
