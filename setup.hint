@@ -1,5 +1,5 @@
 category: Mail
-requires: gsl libdb4.5 libiconv2
+requires: gsl libdb4.8 libiconv2
 sdesc: "Email spam filter"
 ldesc: "Bogofilter is a mail filter that classifies mail as spam or 
 non-spam by a statistical analysis of the message's header and content 
