@@ -1,8 +1,0 @@
-DESCRIPTION="Email spam filter"
-HOMEPAGE="http://bogofilter.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
-PATCH_URI="1.2.0-aclocal.patch"
-
-DIFF_EXCLUDES="config.in"
-
-CYGCONF_ARGS="--with-database=db --without-included-gsl --disable-gsltest"
