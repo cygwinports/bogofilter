@@ -7,9 +7,15 @@ DESCRIPTION="Bogofilter is a mail filter that classifies mail as spam or
 non-spam by a statistical analysis of the message's header and content (body).
 The program is able to learn from the user's classifications and corrections."
 HOMEPAGE="http://bogofilter.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/${NAME}/${NAME}-${VERSION}.tar.bz2"
 PATCH_URI="1.2.0-aclocal.patch"
 
 DIFF_EXCLUDES="config.in"
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	# avoid regeneration; the code isn't compatible with latest flex
+	touch src/lexer_v3.c
+}
 
 CYGCONF_ARGS="--with-database=db --without-included-gsl --disable-gsltest"
