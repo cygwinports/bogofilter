@@ -1,5 +1,5 @@
 NAME="bogofilter"
-VERSION=1.2.3
+VERSION=1.2.4
 RELEASE=1
 CATEGORY="Mail"
 SUMMARY="Email spam filter"
